@@ -1,0 +1,271 @@
+{
+  "users": [
+    {
+      "id": "U1001",
+      "name": "Lt. A. Sharma",
+      "role": "Officer",
+      "service_id": "SV1001",
+      "email": "a.sharma@*****.in",
+      "phone": "9876****12",
+      "status": "Active",
+      "last_login": "2025-01-20T09:12:00Z",
+      "device_id": "D2001",
+      "verified": true,
+      "joined_at": "2024-03-15T08:00:00Z",
+      "groups": 3
+    },
+    {
+      "id": "U1002", 
+      "name": "Mrs. R. Patel",
+      "role": "Family",
+      "service_id": "FM2002",
+      "email": "r.patel@*****.in",
+      "phone": "9823****45",
+      "status": "Pending",
+      "last_login": null,
+      "device_id": null,
+      "verified": false,
+      "joined_at": "2025-01-18T14:30:00Z",
+      "groups": 0
+    },
+    {
+      "id": "U1003",
+      "name": "Maj. S. Rao", 
+      "role": "Veteran",
+      "service_id": "VT3003",
+      "email": "s.rao@*****.in",
+      "phone": "9765****89",
+      "status": "Suspended",
+      "last_login": "2025-01-15T16:45:00Z",
+      "device_id": "D2003",
+      "verified": true,
+      "joined_at": "2024-06-10T12:00:00Z",
+      "groups": 2
+    },
+    {
+      "id": "U1004",
+      "name": "Capt. K. Singh",
+      "role": "Officer", 
+      "service_id": "SV1004",
+      "email": "k.singh@*****.in",
+      "phone": "9654****23",
+      "status": "Active",
+      "last_login": "2025-01-20T11:30:00Z",
+      "device_id": "D2004",
+      "verified": true,
+      "joined_at": "2024-01-20T10:00:00Z",
+      "groups": 5
+    },
+    {
+      "id": "U1005",
+      "name": "Col. M. Kumar",
+      "role": "Admin",
+      "service_id": "AD1005", 
+      "email": "m.kumar@*****.in",
+      "phone": "9543****67",
+      "status": "Active",
+      "last_login": "2025-01-20T08:45:00Z",
+      "device_id": "D2005",
+      "verified": true,
+      "joined_at": "2023-12-01T09:00:00Z",
+      "groups": 1
+    }
+  ],
+  "devices": [
+    {
+      "device_id": "D2001",
+      "user_id": "U1001",
+      "model": "Pixel 7",
+      "os": "Android 13",
+      "compliance": "Compliant",
+      "attested_at": "2025-01-20T09:00:00Z",
+      "ip": "10.1.***.45",
+      "safety_score": 95
+    },
+    {
+      "device_id": "D2003",
+      "user_id": "U1003", 
+      "model": "iPhone 12",
+      "os": "iOS 16",
+      "compliance": "Rooted",
+      "attested_at": "2025-01-15T16:40:00Z",
+      "ip": "10.1.***.78",
+      "safety_score": 35
+    },
+    {
+      "device_id": "D2004",
+      "user_id": "U1004",
+      "model": "Samsung S23",
+      "os": "Android 14", 
+      "compliance": "Compliant",
+      "attested_at": "2025-01-20T11:15:00Z",
+      "ip": "10.1.***.92",
+      "safety_score": 98
+    },
+    {
+      "device_id": "D2005",
+      "user_id": "U1005",
+      "model": "Pixel 8 Pro",
+      "os": "Android 14",
+      "compliance": "Compliant",
+      "attested_at": "2025-01-20T08:30:00Z", 
+      "ip": "10.1.***.12",
+      "safety_score": 99
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "name": "Field Ops - West",
+      "type": "Operational",
+      "members": 120,
+      "pending_requests": [
+        {
+          "user_id": "U1002",
+          "user_name": "Mrs. R. Patel",
+          "requested_at": "2025-01-18T10:00:00Z",
+          "reason": "Family member verification"
+        }
+      ],
+      "activity": 412,
+      "created_at": "2024-01-15T00:00:00Z"
+    },
+    {
+      "group_id": "G002", 
+      "name": "Veteran Support",
+      "type": "Family",
+      "members": 420,
+      "pending_requests": [],
+      "activity": 134,
+      "created_at": "2024-02-01T00:00:00Z"
+    },
+    {
+      "group_id": "G003",
+      "name": "Emergency Response",
+      "type": "Operational", 
+      "members": 85,
+      "pending_requests": [],
+      "activity": 256,
+      "created_at": "2024-03-10T00:00:00Z"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "I9001",
+      "type": "Failed Login",
+      "severity": "Warning",
+      "timestamp": "2025-01-20T08:30:00Z",
+      "user_id": "U1002",
+      "status": "Open",
+      "summary": "Multiple failed MFA attempts",
+      "description": "User attempted login 5 times with incorrect MFA token",
+      "assigned_to": null
+    },
+    {
+      "id": "I9002",
+      "type": "Device Compromise", 
+      "severity": "Critical",
+      "timestamp": "2025-01-15T05:20:00Z",
+      "user_id": "U1003",
+      "status": "Investigating",
+      "summary": "Rooted device detected",
+      "description": "Device attestation failed - root access detected on user device",
+      "assigned_to": "U1005"
+    },
+    {
+      "id": "I9003",
+      "type": "Unauthorized Access",
+      "severity": "Critical",
+      "timestamp": "2025-01-19T14:15:00Z", 
+      "user_id": "U1001",
+      "status": "Resolved",
+      "summary": "VPN connection from unknown location",
+      "description": "User connected from location outside authorized zones",
+      "assigned_to": "U1005"
+    },
+    {
+      "id": "I9004",
+      "type": "Unauthorized Access",
+      "severity": "Critical",
+      "timestamp": "2025-01-20T11:15:00Z", 
+      "user_id": "U1002",
+      "status": "Unresolved",
+      "summary": "VPN connection from unknown location",
+      "description": "User connected from location outside authorized zones",
+      "assigned_to": "U1005"
+    }
+  ],
+  "messages_stats": [
+    {
+      "group_id": "G001",
+      "date": "2025-01-20",
+      "messages": 412
+    },
+    {
+      "group_id": "G002",
+      "date": "2025-01-20", 
+      "messages": 134
+    },
+    {
+      "group_id": "G003",
+      "date": "2025-01-20",
+      "messages": 256
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "A5001",
+      "actor": "Admin:Kumar",
+      "action": "User Approved",
+      "target": "U1002",
+      "timestamp": "2025-01-20T11:00:00Z",
+      "details": "Manual approval after document verification",
+      "severity": "Info"
+    },
+    {
+      "id": "A5002",
+      "actor": "System",
+      "action": "Device Attestation Failed",
+      "target": "D2003", 
+      "timestamp": "2025-01-15T05:22:00Z",
+      "details": "Root access detected during device attestation",
+      "severity": "Critical"
+    },
+    {
+      "id": "A5003",
+      "actor": "Admin:Kumar", 
+      "action": "User Suspended",
+      "target": "U1003",
+      "timestamp": "2025-01-15T06:00:00Z",
+      "details": "Suspended due to device compromise",
+      "severity": "Warning"
+    },
+    {
+      "id": "A5004",
+      "actor": "System",
+      "action": "Incident Created",
+      "target": "I9002",
+      "timestamp": "2025-01-15T05:20:00Z", 
+      "details": "Critical incident auto-generated from device attestation failure",
+      "severity": "Critical"
+    }
+  ],
+  "dashboard_stats": {
+    "active_users": 3,
+    "pending_approvals": 1, 
+    "critical_incidents": 1,
+    "daily_messages": 802,
+    "device_compliance": {
+      "compliant": 75,
+      "non_compliant": 15,
+      "unknown": 10
+    },
+    "user_activity_30d": [
+      {"date": "2024-12-21", "users": 245},
+      {"date": "2024-12-28", "users": 289},
+      {"date": "2025-01-04", "users": 312}, 
+      {"date": "2025-01-11", "users": 298},
+      {"date": "2025-01-18", "users": 334}
+    ]
+  }
+}
