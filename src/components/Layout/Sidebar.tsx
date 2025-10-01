@@ -21,6 +21,9 @@ interface SidebarProps {
   currentRole: UserRole;
 }
 
+
+
+
 const navigation = [
   { name: 'Dashboard', href: '/', icon: HomeIcon, roles: ['Super Admin', 'Group Admin', 'Auditor'] },
   { name: 'User Management', href: '/users', icon: UsersIcon, roles: ['Super Admin', 'Group Admin'] },
@@ -30,6 +33,7 @@ const navigation = [
   { name: 'Incidents & Alerts', href: '/incidents', icon: ExclamationTriangleIcon, roles: ['Super Admin', 'Group Admin'] },
   { name: 'Reports', href: '/reports', icon: ChartBarIcon, roles: ['Super Admin', 'Group Admin', 'Auditor'] },
   { name: 'Settings', href: '/settings', icon: CogIcon, roles: ['Super Admin'] },
+  {name:'Suchak Android Demo', href:"https://new-chat-3rae.bolt.host", icon:'/public/phone.png', roles :['Super Admin', 'Group Admin', 'Auditor'] }
 ];
 
 const Sidebar: React.FC<SidebarProps> = ({ collapsed, onToggle, currentRole }) => {
