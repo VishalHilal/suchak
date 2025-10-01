@@ -137,7 +137,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           })}
           <div className="flex items-center justify-between">
             <a
-              href={"https://new-chat-3rae.bolt.host"}
+              href={"https://suchak-web-app-demo.vercel.app"}
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors text-slate-300 hover:text-white hover:bg-slate-800`}
